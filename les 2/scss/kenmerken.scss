@@ -1,0 +1,38 @@
+@use 'components';
+
+.kenmerken{
+    @extend %section;
+}
+
+.kenmerken__header{
+    @extend %header;
+}
+
+.kenmerken__h2{
+    @extend %h2Handwriting;
+}
+.kenmerkIcon{
+    font-size: 5rem;  
+    margin: 3rem;
+}
+
+.kenmerken__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.kenmerken__listItems{
+    list-style: none;
+    color: #921A40;
+    width: 35%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

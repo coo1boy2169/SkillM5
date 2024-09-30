@@ -1,0 +1,42 @@
+@use 'colors';
+@use 'components';
+
+.over{
+  @extend %section;
+}
+
+.over__header{
+  @extend %header;
+}
+
+.over__h2{
+  @extend %h2Handwriting;
+}
+
+.over__columns{
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  height: 100%;
+}
+
+.over__column{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.over__p{
+  width: 55ch;
+  color: black;
+}
+
+
+
+.over__img{
+  padding: 3rem;
+  width: 60rem;
+  height: 60rem;
+  object-fit: cover;
+  position: relative;
+}

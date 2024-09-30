@@ -1,0 +1,48 @@
+@use 'colors';
+@use 'fonts';
+@use 'components';
+
+
+.header{
+    height: 80vh;
+    position: relative;
+}
+
+.header__figure{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(206, 195, 200, 0.7), rgba(0, 0, 255, 0.2)), url("../img/pexels-bagus41-1440476\ \(1\).jpg");
+    background-position: bottom;
+    object-fit: cover; 
+    }
+
+.header > figure> div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    color: colors.$font-color;
+    text-align: center;
+}
+
+.header__h1{
+    @extend %h2Handwriting;
+    font-size: 400%;
+}
+
+.header__h2{
+    @extend %h2Handwriting;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #393131;
+}
+
+.header__button{
+   @extend %cta;
+}
+

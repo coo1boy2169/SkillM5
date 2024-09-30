@@ -1,0 +1,299 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  background: rgba(255, 192, 226, 0.8);
+}
+
+a,
+a:visited,
+a:link {
+  color: #eee;
+  text-decoration: none;
+}
+
+.galerij__button, .header__button, .nav__button {
+  width: 11rem;
+  padding: 1rem;
+  font-size: 80%;
+  background: #e94560;
+  border: none;
+  color: #eee;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+.galerij__button:hover, .header__button:hover, .nav__button:hover {
+  cursor: pointer;
+  background: rgba(255, 141, 202.5238095238, 0.8);
+  transition: 0.2s;
+}
+
+.galerij__header, .kenmerken__header, .over__header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  line-height: 3rem;
+  gap: 3rem;
+  flex-direction: column;
+}
+
+.galerij__h2, .kenmerken__h2, .over__h2, .header__h1, .header__h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 380%;
+  color: #eee;
+}
+
+.galerij, .kenmerken, .over {
+  height: 80rem;
+  border-bottom: 0.2rem solid #eee;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  background: rgba(70, 130, 180, 0.7);
+  justify-content: space-between;
+  height: 7rem;
+  align-items: center;
+  color: #eee;
+  font-size: 120%;
+  padding: 4rem;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav__button:hover {
+  color: red;
+}
+
+.header {
+  height: 80vh;
+  position: relative;
+}
+
+.header__figure {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(206, 195, 200, 0.7), rgba(0, 0, 255, 0.2)), url("../img/pexels-bagus41-1440476 (1).jpg");
+  background-position: bottom;
+  object-fit: cover;
+}
+
+.header > figure > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  color: #eee;
+  text-align: center;
+}
+
+.header__h1 {
+  font-size: 400%;
+}
+
+.header__h2 {
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #393131;
+}
+
+.over__columns {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  height: 100%;
+}
+
+.over__column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.over__p {
+  width: 55ch;
+  color: black;
+}
+
+.over__img {
+  padding: 3rem;
+  width: 60rem;
+  height: 60rem;
+  object-fit: cover;
+  position: relative;
+}
+
+.kenmerkIcon {
+  font-size: 5rem;
+  margin: 3rem;
+}
+
+.kenmerken__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.kenmerken__listItems {
+  list-style: none;
+  color: #921A40;
+  width: 35%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.galerij__header {
+  padding-bottom: 2rem;
+}
+
+.galerij__fotos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galerij__foto {
+  width: 25%;
+  height: 40rem;
+  list-style: none;
+  position: relative;
+}
+
+.galerij__gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(206, 195, 200, 0.7), rgba(0, 0, 255, 0.2));
+  transform: scaleX(0);
+  transition: 0.8s;
+  transform-origin: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.galerij__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.galerij__button {
+  opacity: 0;
+  transition-delay: 0.8s;
+  transition-duration: 0.2s;
+}
+
+.galerij__foto:hover .galerij__button {
+  opacity: 1;
+}
+
+.galerij__foto:hover .galerij__gradient {
+  transform: scale(1);
+}
+
+@media screen and (max-width: 75rem) {
+  body {
+    font-size: 1.6rem;
+  }
+  .header {
+    height: 140rem;
+  }
+  .over {
+    min-height: 120rem;
+  }
+  .over__header {
+    height: 10%;
+  }
+  .over__columns {
+    flex-direction: column;
+    height: 80%;
+  }
+  .over__column {
+    flex-direction: column;
+    height: 90%;
+  }
+  .over__p {
+    width: 100%;
+    color: #921A40;
+  }
+  .over__img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .kenmerken {
+    min-height: 120rem;
+    width: 100%;
+  }
+  .kenmerken__list {
+    width: 100%;
+    height: 5rem;
+  }
+  .galerij {
+    height: auto;
+  }
+  .galerij__fotos {
+    flex-wrap: wrap;
+  }
+  .galerij__foto {
+    height: 20rem;
+    width: 100%;
+  }
+  .galerij__foto:hover .galerij__gradient {
+    transform: scale(0);
+  }
+  .galerij__foto:hover .galerij__button {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 50rem) {
+  .nav__list {
+    flex-direction: column;
+  }
+  .over__columns {
+    padding: 2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
