@@ -1,0 +1,11 @@
+@keyframes color-change {
+    0% { color: pink; }
+    50% { color: black; }
+    100% { color: pink; }
+  }
+
+  @keyframes color-change2 {
+    0% { color: black; }
+    50% { color: pink; }
+    100% { color: black; }
+  }

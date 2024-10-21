@@ -1,0 +1,21 @@
+@use '../abstract/colors';
+@use '../abstract/mixins';
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 550px;
+    background: colors.$standaart;
+
+
+
+    &__h3 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        animation-name: color-change2;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+}

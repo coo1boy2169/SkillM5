@@ -1,0 +1,42 @@
+@use '../abstract/colors';
+
+body{
+    background: #eee;
+}
+
+div{
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+    box-shadow: 
+    300px 200px colors.$black,
+    200px 300px  colors.$black,
+    200px 410px  colors.$black,
+    300px 500px colors.$black,
+    410px 500px colors.$black,
+    500px 410px colors.$black,
+    500px 300px colors.$black,
+    410px 200px colors.$black,
+
+    650px 350px colors.$purple,
+
+
+    800px 150px colors.$pink,
+    800px 250px colors.$pink,
+    800px 350px colors.$pink,
+    800px 450px colors.$pink,
+    800px 550px colors.$pink,
+    900px 350px colors.$pink,
+    1000px 350px colors.$pink,
+    1100px 150px colors.$pink,
+    1100px 250px colors.$pink,
+    1100px 350px colors.$pink,
+    1100px 450px colors.$pink,
+    1100px 550px colors.$pink,
+    
+    ;
+}
+
+
