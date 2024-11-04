@@ -9,3 +9,9 @@
     50% { color: pink; }
     100% { color: black; }
   }
+
+  @mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

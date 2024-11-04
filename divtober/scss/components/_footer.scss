@@ -4,9 +4,7 @@
 
 
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include mixins.flexCenter;
     margin-top: 550px;
     background: colors.$standaart;
 
